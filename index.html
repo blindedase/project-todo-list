@@ -1,61 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>To Do List</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 </head>
 <body>
-	
-	
-
-	<!-- <div class="container">
-
-        <div id="newtask">
-            <input type="text" placeholder="Add Tasks">
-            <button id="push">Add</button>
-        </div>
-        
-        <div id="tasks"></div>
-    </div> -->
     
-    <!-- <div class="main-container">
-        <div class="task-title">Add Task</div>
-        <div id="add-task">
-            <input type="text" placeholder="Add New Task">
-            <button id="submit">Add</button>
-        </div>
+
+    <div class="lp-container">
+        <div class="info-container"> 
+            <div class="info-title">Hi, What's your name?</div>
         
-    </div>
-		
-    <div class="existing-task-container">
-        <div class="task-title">Tasks</div>
-        <div id="exisiting-task"></div>
-    </div> -->
+            <div class="user-info">
 
-
-
-    <div class="title">To Do List App</div>
-    
-    <div class="main-container">
-
-            <div id="add-task">
-
-                <form action="/test" id="testForm">
-                    <input type="text">
-                    <button>Submit</button>
-                </form>
+                <div class="firstName"> 
+                    <label for="">First Name</label>
+                    <input id="firstName" type="text" placeholder="Enter First Name">
+                </div>
+                <div class="lastName">
+                    <label for="">Last Name</label>
+                    <input id="lastName" type="text" placeholder="Enter Last Name">
+                </div>
+                
 
             </div>
-            
-        <div id="tasks">
-            <ul id="userTasks">
-
-            </ul>
+            <button id="submit-info">Submit</button>
+            <p id="greet"></p>
         </div>
+    </div>
 
+    <div class="main-container">
+        <div class="main-title">My To Do List</div>
+        <div class="add-container">
+            <input type="text" placeholder="Add Task" id="userInput">
+            <button onclick="newElement()" class="addBtn">Add Task</button>
+        </div>
+        <div class="task-container">
+            <div class="ul-container">
+                <ul id="unorderedList">
+                    <!-- list insert -->
+                </ul>
+            </div>
+        </div>
     </div>
 
 
-<script src="js/app.js"></script>
+
 </body>
 </html>
