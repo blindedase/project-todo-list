@@ -9,45 +9,21 @@
 </head>
 <body>
     
-
     <div class="lp-container">
         <div class="info-container"> 
             <div class="info-title">Hi, What's your name?</div>
-        
+        </div>
             <div class="user-info">
-
-                <div class="firstName"> 
-                    <label for="">First Name</label>
-                    <input id="firstName" type="text" placeholder="Enter First Name">
+                <div class="input-container"> 
+                <form action="" id="formInfo">
+                    <label for="">Name</label>
+                    <input id="user" type="text" placeholder="Please enter your name">
+                    <span onclick="insertName()" class="btn">Submit</span>
+                </form>
                 </div>
-                <div class="lastName">
-                    <label for="">Last Name</label>
-                    <input id="lastName" type="text" placeholder="Enter Last Name">
-                </div>
-                
-
             </div>
-            <button id="submit-info">Submit</button>
-            <p id="greet"></p>
-        </div>
     </div>
 
-    <div class="main-container">
-        <div class="main-title">My To Do List</div>
-        <div class="add-container">
-            <input type="text" placeholder="Add Task" id="userInput">
-            <button onclick="newElement()" class="addBtn">Add Task</button>
-        </div>
-        <div class="task-container">
-            <div class="ul-container">
-                <ul id="unorderedList">
-                    <!-- list insert -->
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-
+<script src="js/app.js"></script>
 </body>
 </html>

@@ -6,44 +6,110 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+.lp-container{
+    display: flex;
     flex-direction: column;
+    gap: 16px;
+    background: rgb(0,90,205);
+    background: linear-gradient(90deg, rgba(0,90,205,1) 25%, rgba(0,147,203,1) 50%);
+    border-radius: 8px;
 }
 
-div{
-    border: 2px solid red;
-    padding: 2px;
-    margin: 2px;
+.info-container{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 16px;
+    text-align: center;
 }
 
-ul{
-    margin: 0;
+.info-title{
+    font-size: 48px;
+}
+
+.user-info{
+    display: flex;
+    padding: 64px;
+    gap: 48px;
+    justify-content: center;
+    background: rgb(109,215,253);
+    background: linear-gradient(90deg, rgba(109,215,253,1) 25%, rgba(190,240,255,1) 50%);
+    border-end-start-radius:  8px;
+    border-end-end-radius: 8px;
+}
+
+#user{
     padding: 8px;
 }
 
-ul li{
-    list-style: none;
+.btn{
+    background-color: #01afe3; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
-.main-container{
+
+.task-container{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #1f2937;
+    background: rgb(109,215,253);
+    background: linear-gradient(90deg, rgba(109,215,253,1) 25%, rgba(190,240,255,1) 50%);
 }
 
-.main-title{
-    font-size: 48px;
-    font-weight: bolder;
-    color: #f9faf8;
+.todo-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(0,90,205);
+    background: linear-gradient(90deg, rgba(0,90,205,1) 25%, rgba(0,147,203,1) 50%);
 }
 
+.todo-greet-container{
+    padding: 8px;
+}
 
-.add-container{
+.todo-greet-title{
+    font-size: 32px;
+}
+
+#userName{
+    font-size: 30px;
+}
+
+.todo-list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.todo-list-greet{
     padding: 16px;
 }
 
-.task-container{
+.insert-task{
     padding: 16px;
-    background-color: white;
+}
+
+
+
+#list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 5px;
+    
 }

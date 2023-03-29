@@ -6,21 +6,45 @@
 </head>
 <body>
 
-    <div class="main-container">
-        <div class="main-title">My To Do List</div>
-        <div class="add-container">
-            <input type="text" placeholder="Add Task" id="userInput">
-            <button onclick="newElement()" class="addBtn">Add Task</button>
+    <div class="todo-container">
+
+        <div class="info-container"> 
+            <div class="info-title">My To Do List</div>
+            <div class="title-button"><a href="/index.html" class="btn">Go Back</a></div>
         </div>
+        
         <div class="task-container">
-            <div class="ul-container">
-                <ul id="unorderedList">
-                    <!-- list insert -->
-                </ul>
+        <div class="todo-greet-container"> 
+            <div class="todo-greet-title">Hi, <span id="userName"></span>!</div>
+        </div>
+
+        <div class="todo-list-container">
+            <div class="todo-list-greet">Here's your list.</div>
+            <div class="insert-task">
+            <label class="label">Insert task</label>
+            <input type="text" id="add-task" class="form-input" placeholder="Add your task">
+            <span onclick="addList()" class="btn">Add</span>
             </div>
         </div>
+
+        <div class="exisiting-list">
+            <ul id="list">
+
+            </ul>
+        </div>
+    </div>
     </div>
 
+
+
+
+
+
+
+<script>
+    const username = localStorage.getItem(`userName`);
+    document.getElementById(`userName`).textContent = username;
+</script>
 <script src="/js/app.js"></script>
 </body>
 </html>
